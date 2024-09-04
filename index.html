@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="/img/Music_logo.png" alt="logo" width="225px" height="220px">
+    </header>
+    <nav class="main-nav" id="mynav">
+        <a href="#album" class="nav-link">Blurryface</a>
+        <a href="#album 2" class="nav-link">Mm.. Food</a>
+        <a href="#album 3" class="nav-link">Origin of Symmetry</a>
+        <a href="#album 4" class="nav-link">Ok Computer</a>
+       <a href="#" class="icon burger" onclick="myfunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!--<a href="" class="icon burger">
+            <i class="fa fa-bars"></i>
+        </a>-->
+    </nav> 
+    <main>
+        <section class="main-sec">
+            <div id="album">
+                <div class="foto">
+                    <img src="/img/Blurryface_album_cover.jpg" alt="Twenty one pilots">
+                </div>
+                <div class="texto">
+                    <h2>Blurryface was well-received by critics, who complimented its themes and musical diversity. <br> It is considered to be the band's breakthrough album, becoming their first and only release to date to reach number one on the Billboard 200. The album sold over 1.5 million copies in the United States as of April 2017. <br> In 2018, Blurryface became the first album in the digital era to have every track receive at least a gold certification from the Recording Industry Association of America. <br> On May 15, 2019, it reached the milestone of being on the Billboard 200 chart for four consecutive years, never leaving the chart up until that point. It is also the most-streamed rock album in history.
+                        </h2>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec">
+            <div id="album 2">
+                <div class="foto">
+                    <img src="/img/doom.jpg" alt="MF DOOM">
+                </div>
+                <div class="texto">
+                    <h2>Background. MF Doom described Mm.. Food as a concept album "about the things you find on a picnic, <br> 
+                        or at a picnic table". The album's titles and lyrics contain references to different foods, some with common metaphors and double entendres in the "street world" and the "nutritional realm".</h2>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec">
+            <div id="album 3">
+                <div class="foto">
+                    <img src="/img/origin-of-symmetry-muse-medium-square.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <h2>Origin of Symmetry is the second studio album by English rock band Muse, released on 18 June 2001 through Taste Media. It was produced by John Leckie, who produced Muse's debut album, Showbiz (1999), and David Bottrill.
+
+                        Origin of Symmetry reached number three on the UK Albums Chart[1] and was certified platinum. <br> Four singles were released: "Plug In Baby", "New Born", "Bliss", and "Hyper Music" / "Feeling Good". As of 2018, Origin of Symmetry had sold more than two million copies worldwide. <br> 
+                        It received mostly positive reviews, with critics praising its blend of rock and classical music. It has since been named one of the greatest rock albums of the 2000s by several publications. </h2>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec">
+            <div id="album 4">
+                <div class="foto">
+                    <img src="/img/RadioheadOKComputer600-2.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <h2>OK Computer is the third studio album by the English rock band Radiohead, released on 21 May 1997. With their producer, Nigel Godrich, Radiohead recorded most of OK Computer in their rehearsal space in Oxfordshire and the historic mansion of St Catherine's Court in Bath in 1996 and early 1997. <br> 
+                        They distanced themselves from the guitar-centred, lyrically introspective style of their previous album, The Bends. <br> OK Computer's abstract lyrics, densely layered sound and eclectic influences laid the groundwork for Radiohead's later, more experimental work. </h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function myfunction(){
+            var x = document.getElementById("mynav");
+            if(x.className == "main-nav"){
+                x.className <= " responsive ";
+            } else {
+                x.className = "main.nav"
+            }
+        }
+    </script>
+    <!--<script>
+        const buger = document.querySelector('burger');
+        const main = document.getElementById('mynav')
+        buger.addEventListener('click',() =>{
+            main.classList.toggle('responsive');
+        });
+    </script>-->
+    <footer>
+        <section>
+            <nav class="footer-nav">
+                <a href="#">enlace 1</a>
+                <a href="#">enlace 2</a>
+                <a href="#">enlace 3</a>
+                <a href="#">enlace 4</a>    
+            </nav>
+        </section>
+        <section class="footer-nav2">
+            <a href="">Mapa</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2853.4044486125604!2d-106.45038245107591!3d31.73531519126506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75951091c5ef7%3A0x610851e885f1090d!2sWendy&#39;s%20Rio%20Grande!5e0!3m2!1ses!2smx!4v1723393472323!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="footer-nav3">
+            <p>Dirección</p>
+            <p>Telefono</p>
+            <p>Correo electronico</p>
+            <p>Código postal</p>
+        </section>
+    </footer>
+</body>
+</html>
